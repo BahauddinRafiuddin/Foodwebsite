@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    height:70px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(84, 82, 82);
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+   list-style-type: none;
+}
+
+#navbar ul li a{
+    font-family: 'Martian Mono', monospace;
+    color:white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    margin:10px;
+    font-size: 1.0rem;
+}
+
+#navbar ul li a:hover{
+    
+    color:rgb(5, 4, 4);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.logo{
+    margin:10px;
+    padding:10px;
+}
+.logo img{
+    height:60px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding:3px 200px;
+    height: 200px;
+}
+
+#home::before{
+    content:"";
+    background:url('back1.jpg')no-repeat center;
+    position: absolute;
+    z-index:-1;
+    height: 100%;
+    width:100%;
+    opacity:0.87;
+}
+
+.h-primary{
+    font-size:2.8rem;
+    padding: 12px;
+    text-align: center;
+    color:rgb(251, 244, 244);
+    font-family: 'Martian Mono', monospace;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+    font-size:0.9rem;
+    color:white
+}
+.home_parent{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding:3px 200px;
+    height: 200px;
+}
+
+.btn{
+    margin: 20px;
+    padding: 10px 20px;
+    cursor:pointer;
+    border-radius: 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.h-seconadry{
+
+}
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid red;
+}
+#services .box img{
+    margin: auto;
+    display: block;
+    height:160px;
+}
+
+.center{
+    text-align: center;
+}
